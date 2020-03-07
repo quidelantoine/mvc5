@@ -36,6 +36,10 @@ class Model
         return App::getDatabase()->prepare("SELECT * FROM " . self::getTable() . " WHERE ".$column." = ?",[$value],get_called_class(),true);
     }
 
+    public static function count(){
+        return App::getDatabase()->aggregation("SELECT COUNT(id) FROM " . self::getTable());
+    }
+
     public static function delete($id,$columId = 'id')
     {
         return App::getDatabase()->prepareInsert("DELETE FROM " . self::getTable() . " WHERE ".$columId." = ?",[$id],get_called_class(),true);

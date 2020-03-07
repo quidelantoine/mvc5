@@ -140,6 +140,7 @@ class CommentModel extends \App\Weblitzer\Model
 public function all()
 public function findById($id)
 public function findByColumn($column,$value)
+public function count()
 public function delete($id)
 </code></pre>
 
