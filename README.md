@@ -1,4 +1,4 @@
-<h1>Framework Pédagogique MVC4</h1>
+<h1>Framework Pédagogique MVC5</h1>
 
 <h2>Installation</h2>
 <h3>Prérequis</h3>
@@ -10,11 +10,11 @@
 
 <h3>Configurations</h3>
 
-<p>Par sa simplicité, MVC4 requière peu de configuration pour fonctionner.</p>
+<p>Par sa simplicité, MVC5 requière peu de configuration pour fonctionner.</p>
 
 <h3>Le fichier de configuration</h3>
 
-<p>MVC4 est livré avec un fichier nommé config/config-dist.php. Ce fichier est destiné à être versionné, et ne doit pas contenir d'informations personnelles ou sensibles. Le fichier lu par défaut par le framework est <span class="code">config/config.php</span>, qui lui, ne doit pas être versionné, il vous est personnel.</p>
+<p>MVC5 est livré avec un fichier nommé config/config-dist.php. Ce fichier est destiné à être versionné, et ne doit pas contenir d'informations personnelles ou sensibles. Le fichier lu par défaut par le framework est <span class="code">config/config.php</span>, qui lui, ne doit pas être versionné, il vous est personnel.</p>
 
 <p>Pour démarrer copier-coller le contenu du fichier config/config-dist.php dans 
 
