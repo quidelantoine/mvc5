@@ -30,14 +30,16 @@ class Controller
 
     protected function Abort403()
     {
+        $view = new View();
         header('HTTP/1.0 403 Forbidden');
-        $this->redirect('index.php?page=403');
+        $this->redirect($view->path('403'));
     }
 
     protected function Abort404()
     {
+        $view = new View();
         header('HTTP/1.0 404 Not Found');
-        $this->redirect('index.php?page=404');
+        $this->redirect($view->path('404'));
     }
 
     /**
@@ -75,9 +77,15 @@ class Controller
         return $post;
     }
 
-    protected function redirect($url)
+    protected function redirect($url,$args = array())
     {
-        header('Location: '.$url);
+        $view = new View();
+        if(!empty($args)) {
+            $realurl = $view->path($url,$args);
+        } else {
+            $realurl = $view->path($url);
+        }
+        header('Location: '.$realurl);
         die();
     }
 
