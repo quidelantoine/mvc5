@@ -30,16 +30,14 @@ class Controller
 
     protected function Abort403()
     {
-        $view = new View();
         header('HTTP/1.0 403 Forbidden');
-        $this->redirect($view->path('403'));
+        $this->redirect('403');
     }
 
     protected function Abort404()
     {
-        $view = new View();
         header('HTTP/1.0 404 Not Found');
-        $this->redirect($view->path('404'));
+        $this->redirect('404');
     }
 
     /**
