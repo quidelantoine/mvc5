@@ -160,7 +160,7 @@ public function delete($id)
 <h4>Les CSS, les JS et les images</h4>
 <p>Tous les fichiers publics de votre application (<em>public</em> dans le sens que vous considérez qu'un internaute doit pouvoir l'afficher directement dans son navigateur) doivent se trouver dans le dossier <span class="code">public/</span>. Autrement, le navigateur n'y aura tout simplement pas accès. Ainsi, vos fichiers .css, .js et vos images (souvent nommés <em>assets</em>) devront nécessairement y être placés.</p>
 
-<h1>BRIEF - EXO</h1>
+<h1>BRIEF - EXO - 1</h1>
 
 Création d'une application pour gèrer les emprunts de produits par des abonnés d'une association.
 
@@ -189,3 +189,39 @@ On pourra enlever un emprunt de la liste en donnant une date à date_end
 - Gestion des catégories de produits.
 - Pagination numérotée des listings des abonnés et des produits.
 - Gestion d'un formulaire au choix à l'aide d'Ajax.
+
+
+<h1>BRIEF - EXO - 2</h1>
+
+Création d'une application pour la gestion d'un lieu avec plusieurs salles de répétitions.
+
+<h4>4 Tables :</h4>
+<p>- **user** (id, name, email)</p>
+<p>- **salle** (id, title,maxuser ) </p>
+<p>- **creneau** (id, id_salle, start_at, nbrehours) </p>
+<p>- **creneau_user** (id, id_creneau, id_user) </p>
+
+<h4>Listing, Show, New, Edit, Delete. (CRUD)</h4>
+Faire un crud complet pour les users.
+
+<h4>Les Salles</h4>
+Ajout formulaire ajout de Salle
+
+<h4>Les Créneau</h4>
+Ajout formulaire ajout de Creneau
+
+<h4>Page d'accueil</h4>
+<p>Listing dans un table de tous les users</p>
+<p>Listing dans un table de tous les Salles</p>
+<p>Listing de tous les creneau avec 
+
+    - Nom de salle 
+    - nbre de user 
+    - Start_at, nbrehours
+</p>
+<h4>Page Détails d'un créneau</h4>
+- afficher nom de salle
+- formulaire pour ajouter un user au creneau
+    - empecher que le nbre de user depasse le maxuser de la salle
+- Affichez tous les user de ce creneau
+- enlever un user du creneau
