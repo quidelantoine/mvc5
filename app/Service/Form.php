@@ -45,9 +45,9 @@ class Form
      * @param $name string
      * @return string
      */
-    public function input($name,$data = null)
+    public function input($name,$type = 'text',$data = null)
     {
-        return $this->arround('<input type="text" id="'.$name.'" name="'.$name.'" value="'.$this->getValue($name,$data).'">');
+        return $this->arround('<input type="'.$type.'" id="'.$name.'" name="'.$name.'" value="'.$this->getValue($name,$data).'">');
     }
 
     /**

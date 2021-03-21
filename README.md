@@ -201,8 +201,8 @@ Création d'une application pour la gestion d'un lieu avec plusieurs salles de r
 <p>- **creneau** (id, id_salle, start_at, nbrehours) </p>
 <p>- **creneau_user** (id, id_creneau, id_user) </p>
 
-<h4>Listing, Show, New, Edit, Delete. (CRUD)</h4>
-Faire un crud complet pour les users.
+<h4>Users</h4>
+Ajout formulaire ajout d'un user
 
 <h4>Les Salles</h4>
 Ajout formulaire ajout de Salle
