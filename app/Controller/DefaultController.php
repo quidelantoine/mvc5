@@ -12,9 +12,9 @@ class DefaultController extends Controller
 
     public function index()
     {
-        $message = 'Bienvenue sur le framework MVC';
+        $message = 'Bienvenue sur le framework MVC au CEPPIC';
 
-        $this->render('app.default.frontpage',array(
+        $this->render('app.default.frontpage', array(
             'message' => $message,
         ));
     }
@@ -26,5 +26,4 @@ class DefaultController extends Controller
     {
         $this->render('app.default.404');
     }
-
 }
